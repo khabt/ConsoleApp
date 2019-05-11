@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hddt_dataModelStoreContainer" CdmEntityContainer="hddt_dataEntities">
+    <EntitySetMapping Name="AdjustInvs">
+      <EntityTypeMapping TypeName="hddt_dataModel.AdjustInv">
+        <MappingFragment StoreEntitySet="AdjustInv">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="AdjustInvId" ColumnName="AdjustInvId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="ProcessDate" ColumnName="ProcessDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="Attachefile" ColumnName="Attachefile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdjustInvTemps">
+      <EntityTypeMapping TypeName="hddt_dataModel.AdjustInvTemp">
+        <MappingFragment StoreEntitySet="AdjustInvTemp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="AdjustInvId" ColumnName="AdjustInvId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="ProcessDate" ColumnName="ProcessDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="Attachefile" ColumnName="Attachefile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApprovalSteps">
+      <EntityTypeMapping TypeName="hddt_dataModel.ApprovalStep">
+        <MappingFragment StoreEntitySet="ApprovalStep">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Roles" ColumnName="Roles" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="ApprovedDate" ColumnName="ApprovedDate" />
+          <ScalarProperty Name="WorkFlowId" ColumnName="WorkFlowId" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="StepState" ColumnName="StepState" />
+          <ScalarProperty Name="ApprovedBy" ColumnName="ApprovedBy" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ApprovalWorkFlows">
+      <EntityTypeMapping TypeName="hddt_dataModel.ApprovalWorkFlow">
+        <MappingFragment StoreEntitySet="ApprovalWorkFlow">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="WorkFlowState" ColumnName="WorkFlowState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="hddt_dataModel.Article">
+        <MappingFragment StoreEntitySet="Articles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateModified" ColumnName="DateModified" />
+          <ScalarProperty Name="UserModified" ColumnName="UserModified" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateFinish" ColumnName="DateFinish" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="IsPub" ColumnName="IsPub" />
+          <ScalarProperty Name="HotYN" ColumnName="HotYN" />
+          <ScalarProperty Name="UrlName" ColumnName="UrlName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Banners">
+      <EntityTypeMapping TypeName="hddt_dataModel.Banner">
+        <MappingFragment StoreEntitySet="Banners">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NavigateUrl" ColumnName="NavigateUrl" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="IsPub" ColumnName="IsPub" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BusinessLogs">
+      <EntityTypeMapping TypeName="hddt_dataModel.BusinessLog">
+        <MappingFragment StoreEntitySet="BusinessLog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Datetime" ColumnName="Datetime" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Comid" ColumnName="Comid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryArticles">
+      <EntityTypeMapping TypeName="hddt_dataModel.CategoryArticle">
+        <MappingFragment StoreEntitySet="CategoryArticles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Css" ColumnName="Css" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="IsPub" ColumnName="IsPub" />
+          <ScalarProperty Name="UrlName" ColumnName="UrlName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contracts">
+      <EntityTypeMapping TypeName="hddt_dataModel.Contract">
+        <MappingFragment StoreEntitySet="Contract">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="Epitome" ColumnName="Epitome" />
+          <ScalarProperty Name="SignDate" ColumnName="SignDate" />
+          <ScalarProperty Name="SignStatus" ColumnName="SignStatus" />
+          <ScalarProperty Name="CurrencyType" ColumnName="CurrencyType" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="ExchangeValue" ColumnName="ExchangeValue" />
+          <ScalarProperty Name="LiquidatedValue" ColumnName="LiquidatedValue" />
+          <ScalarProperty Name="ImplementingAgency" ColumnName="ImplementingAgency" />
+          <ScalarProperty Name="ExecutorId" ColumnName="ExecutorId" />
+          <ScalarProperty Name="InvoicePublished" ColumnName="InvoicePublished" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="CustomerCode" ColumnName="CustomerCode" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerPhone" ColumnName="CustomerPhone" />
+          <ScalarProperty Name="CustomerFax" ColumnName="CustomerFax" />
+          <ScalarProperty Name="CustomerAddress" ColumnName="CustomerAddress" />
+          <ScalarProperty Name="CustomerRepresentative" ColumnName="CustomerRepresentative" />
+          <ScalarProperty Name="CustomerPosition" ColumnName="CustomerPosition" />
+          <ScalarProperty Name="CustomerBankAccount" ColumnName="CustomerBankAccount" />
+          <ScalarProperty Name="CustomerBankName" ColumnName="CustomerBankName" />
+          <ScalarProperty Name="CustomerTaxCode" ColumnName="CustomerTaxCode" />
+          <ScalarProperty Name="CustomerEmail" ColumnName="CustomerEmail" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactFax" ColumnName="ContactFax" />
+          <ScalarProperty Name="ContactPosition" ColumnName="ContactPosition" />
+          <ScalarProperty Name="Signer" ColumnName="Signer" />
+          <ScalarProperty Name="ContractState" ColumnName="ContractState" />
+          <ScalarProperty Name="ContractStatus" ColumnName="ContractStatus" />
+          <ScalarProperty Name="DateStatus" ColumnName="DateStatus" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractAttaches">
+      <EntityTypeMapping TypeName="hddt_dataModel.ContractAttach">
+        <MappingFragment StoreEntitySet="ContractAttach">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractPackages">
+      <EntityTypeMapping TypeName="hddt_dataModel.ContractPackage">
+        <MappingFragment StoreEntitySet="ContractPackage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ExpireDate" ColumnName="ExpireDate" />
+          <ScalarProperty Name="Approve" ColumnName="Approve" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContractProducts">
+      <EntityTypeMapping TypeName="hddt_dataModel.ContractProduct">
+        <MappingFragment StoreEntitySet="ContractProduct">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="ContractId" ColumnName="ContractId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="QuantityRequired" ColumnName="QuantityRequired" />
+          <ScalarProperty Name="QuantityDelivered" ColumnName="QuantityDelivered" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="DiscountRate" ColumnName="DiscountRate" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="VATRate" ColumnName="VATRate" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="hddt_dataModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BankAccountName" ColumnName="BankAccountName" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="BankNumber" ColumnName="BankNumber" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CCEmail" ColumnName="CCEmail" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="RepresentPerson" ColumnName="RepresentPerson" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="SignatureImage" ColumnName="SignatureImage" />
+          <ScalarProperty Name="CusType" ColumnName="CusType" />
+          <ScalarProperty Name="SerialCert" ColumnName="SerialCert" />
+          <ScalarProperty Name="DeliverMethod" ColumnName="DeliverMethod" />
+          <ScalarProperty Name="UpdateDate" ColumnName="UpdateDate" />
+          <ScalarProperty Name="Buyer" ColumnName="Buyer" />
+          <ScalarProperty Name="ExtraPhone" ColumnName="ExtraPhone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Decisions">
+      <EntityTypeMapping TypeName="hddt_dataModel.Decision">
+        <MappingFragment StoreEntitySet="Decision">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="DecisionName" ColumnName="DecisionName" />
+          <ScalarProperty Name="DecisionNo" ColumnName="DecisionNo" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="ParentCompany" ColumnName="ParentCompany" />
+          <ScalarProperty Name="ComName" ColumnName="ComName" />
+          <ScalarProperty Name="ComAddress" ColumnName="ComAddress" />
+          <ScalarProperty Name="Requester" ColumnName="Requester" />
+          <ScalarProperty Name="Director" ColumnName="Director" />
+          <ScalarProperty Name="SystemName" ColumnName="SystemName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SoftApplication" ColumnName="SoftApplication" />
+          <ScalarProperty Name="ListInvPattern" ColumnName="ListInvPattern" />
+          <ScalarProperty Name="Purpose" ColumnName="Purpose" />
+          <ScalarProperty Name="Workflow" ColumnName="Workflow" />
+          <ScalarProperty Name="Responsibility" ColumnName="Responsibility" />
+          <ScalarProperty Name="EffectiveDate" ColumnName="EffectiveDate" />
+          <ScalarProperty Name="EffectDate" ColumnName="EffectDate" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="TechDepartment" ColumnName="TechDepartment" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="hddt_dataModel.Department">
+        <MappingFragment StoreEntitySet="Department">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Part" ColumnName="Part" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Documents">
+      <EntityTypeMapping TypeName="hddt_dataModel.Document">
+        <MappingFragment StoreEntitySet="Document">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FileUrl" ColumnName="FileUrl" />
+          <ScalarProperty Name="CompanySigned" ColumnName="CompanySigned" />
+          <ScalarProperty Name="CustomerSigned" ColumnName="CustomerSigned" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="hddt_dataModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="IDNumber" ColumnName="IDNumber" />
+          <ScalarProperty Name="IDDateOfIssue" ColumnName="IDDateOfIssue" />
+          <ScalarProperty Name="IDPlaceOfIssue" ColumnName="IDPlaceOfIssue" />
+          <ScalarProperty Name="OfficePhone" ColumnName="OfficePhone" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Feedbacks">
+      <EntityTypeMapping TypeName="hddt_dataModel.Feedback">
+        <MappingFragment StoreEntitySet="Feedback">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UserCode" ColumnName="UserCode" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="IsSync" ColumnName="IsSync" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupProducts">
+      <EntityTypeMapping TypeName="hddt_dataModel.GroupProduct">
+        <MappingFragment StoreEntitySet="GroupProducts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvAttaches">
+      <EntityTypeMapping TypeName="hddt_dataModel.InvAttach">
+        <MappingFragment StoreEntitySet="InvAttach">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="UploadDate" ColumnName="UploadDate" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Signed" ColumnName="Signed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvCancels">
+      <EntityTypeMapping TypeName="hddt_dataModel.InvCancel">
+        <MappingFragment StoreEntitySet="InvCancel">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="ComName" ColumnName="ComName" />
+          <ScalarProperty Name="ComAddress" ColumnName="ComAddress" />
+          <ScalarProperty Name="ComPrepared" ColumnName="ComPrepared" />
+          <ScalarProperty Name="ComRepresent" ColumnName="ComRepresent" />
+          <ScalarProperty Name="Method" ColumnName="Method" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Hour" ColumnName="Hour" />
+          <ScalarProperty Name="Minute" ColumnName="Minute" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="CancelDate" ColumnName="CancelDate" />
+          <ScalarProperty Name="ComTaxCode" ColumnName="ComTaxCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvCancelDetails">
+      <EntityTypeMapping TypeName="hddt_dataModel.InvCancelDetail">
+        <MappingFragment StoreEntitySet="InvCancelDetails">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvCancelID" ColumnName="InvCancelID" />
+          <ScalarProperty Name="InvCancellation" ColumnName="InvCancellation" />
+          <ScalarProperty Name="InvPattern" ColumnName="InvPattern" />
+          <ScalarProperty Name="InvSerial" ColumnName="InvSerial" />
+          <ScalarProperty Name="InvCateName" ColumnName="InvCateName" />
+          <ScalarProperty Name="InvCateID" ColumnName="InvCateID" />
+          <ScalarProperty Name="FromNo" ColumnName="FromNo" />
+          <ScalarProperty Name="ToNo" ColumnName="ToNo" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvCategories">
+      <EntityTypeMapping TypeName="hddt_dataModel.InvCategory">
+        <MappingFragment StoreEntitySet="InvCategory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="InvPattern" ColumnName="InvPattern" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsPub" ColumnName="IsPub" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvCertifies">
+      <EntityTypeMapping TypeName="hddt_dataModel.InvCertify">
+        <MappingFragment StoreEntitySet="InvCertify">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvId" ColumnName="InvId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvDelivers">
+      <EntityTypeMapping TypeName="hddt_dataModel.InvDeliver">
+        <MappingFragment StoreEntitySet="InvDeliver">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="CusCode" ColumnName="CusCode" />
+          <ScalarProperty Name="CusName" ColumnName="CusName" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutwardStocks">
+      <EntityTypeMapping TypeName="hddt_dataModel.OutwardStock">
+        <MappingFragment StoreEntitySet="OutwardStock">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="OriginalNo" ColumnName="OriginalNo" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="InStocker" ColumnName="InStocker" />
+          <ScalarProperty Name="OutStocker" ColumnName="OutStocker" />
+          <ScalarProperty Name="Shipper" ColumnName="Shipper" />
+          <ScalarProperty Name="ContractNo" ColumnName="ContractNo" />
+          <ScalarProperty Name="Vehicle" ColumnName="Vehicle" />
+          <ScalarProperty Name="OutWareHouse" ColumnName="OutWareHouse" />
+          <ScalarProperty Name="InWareHouse" ColumnName="InWareHouse" />
+          <ScalarProperty Name="OriginalTotal" ColumnName="OriginalTotal" />
+          <ScalarProperty Name="OriginalDiscount" ColumnName="OriginalDiscount" />
+          <ScalarProperty Name="OriginalAmount" ColumnName="OriginalAmount" />
+          <ScalarProperty Name="VNDTotal" ColumnName="VNDTotal" />
+          <ScalarProperty Name="VNDDiscount" ColumnName="VNDDiscount" />
+          <ScalarProperty Name="VNDAmount" ColumnName="VNDAmount" />
+          <ScalarProperty Name="FKey" ColumnName="FKey" />
+          <ScalarProperty Name="AmountInWords" ColumnName="AmountInWords" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ArisingDate" ColumnName="ArisingDate" />
+          <ScalarProperty Name="ContentExtra" ColumnName="ContentExtra" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+          <ScalarProperty Name="ComExtra" ColumnName="ComExtra" />
+          <ScalarProperty Name="PublishBy" ColumnName="PublishBy" />
+          <ScalarProperty Name="CusCode" ColumnName="CusCode" />
+          <ScalarProperty Name="CusTaxCode" ColumnName="CusTaxCode" />
+          <ScalarProperty Name="CusName" ColumnName="CusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTransactionDatas">
+      <EntityTypeMapping TypeName="hddt_dataModel.PaymentTransactionData">
+        <MappingFragment StoreEntitySet="PaymentTransactionData">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Messages" ColumnName="Messages" />
+          <ScalarProperty Name="CompleteResult" ColumnName="CompleteResult" />
+          <ScalarProperty Name="FailResult" ColumnName="FailResult" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="permissions">
+      <EntityTypeMapping TypeName="hddt_dataModel.permission">
+        <MappingFragment StoreEntitySet="permission">
+          <ScalarProperty Name="permissionid" ColumnName="permissionid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOStocks">
+      <EntityTypeMapping TypeName="hddt_dataModel.ProductOStock">
+        <MappingFragment StoreEntitySet="ProductOStock">
+          <ScalarProperty Name="OutwardStockTicketId" ColumnName="OutwardStockTicketId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="InQuantity" ColumnName="InQuantity" />
+          <ScalarProperty Name="OutQuantity" ColumnName="OutQuantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+          <ScalarProperty Name="IsSum" ColumnName="IsSum" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="hddt_dataModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="NameProduct" ColumnName="NameProduct" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="VATRate" ColumnName="VATRate" />
+          <ScalarProperty Name="GroupCode" ColumnName="GroupCode" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publishes">
+      <EntityTypeMapping TypeName="hddt_dataModel.Publish">
+        <MappingFragment StoreEntitySet="Publish">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="ComName" ColumnName="ComName" />
+          <ScalarProperty Name="ComAddress" ColumnName="ComAddress" />
+          <ScalarProperty Name="ComPhone" ColumnName="ComPhone" />
+          <ScalarProperty Name="ComTaxCode" ColumnName="ComTaxCode" />
+          <ScalarProperty Name="RepresentPerson" ColumnName="RepresentPerson" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="TaxAuthorityCode" ColumnName="TaxAuthorityCode" />
+          <ScalarProperty Name="TaxAuthorityName" ColumnName="TaxAuthorityName" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Delimiter" ColumnName="Delimiter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishInvoices">
+      <EntityTypeMapping TypeName="hddt_dataModel.PublishInvoice">
+        <MappingFragment StoreEntitySet="PublishInvoice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="PublishID" ColumnName="PublishID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="FromNo" ColumnName="FromNo" />
+          <ScalarProperty Name="ToNo" ColumnName="ToNo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="CurrentNo" ColumnName="CurrentNo" />
+          <ScalarProperty Name="InvSerial" ColumnName="InvSerial" />
+          <ScalarProperty Name="InvSerialPrefix" ColumnName="InvSerialPrefix" />
+          <ScalarProperty Name="InvSerialSuffix" ColumnName="InvSerialSuffix" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="RegisterID" ColumnName="RegisterID" />
+          <ScalarProperty Name="RegisterName" ColumnName="RegisterName" />
+          <ScalarProperty Name="InvPattern" ColumnName="InvPattern" />
+          <ScalarProperty Name="InvCateName" ColumnName="InvCateName" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="SerialDivisionMark" ColumnName="SerialDivisionMark" />
+          <ScalarProperty Name="UserNames" ColumnName="UserNames" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishTemps">
+      <EntityTypeMapping TypeName="hddt_dataModel.PublishTemp">
+        <MappingFragment StoreEntitySet="PublishTemp">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="PublishInvID" ColumnName="PublishInvID" />
+          <ScalarProperty Name="ComName" ColumnName="ComName" />
+          <ScalarProperty Name="ComTaxCode" ColumnName="ComTaxCode" />
+          <ScalarProperty Name="ComAddress" ColumnName="ComAddress" />
+          <ScalarProperty Name="ComPhone" ColumnName="ComPhone" />
+          <ScalarProperty Name="ComFax" ColumnName="ComFax" />
+          <ScalarProperty Name="ComBankNumber" ColumnName="ComBankNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseInvAttaches">
+      <EntityTypeMapping TypeName="hddt_dataModel.PurchaseInvAttach">
+        <MappingFragment StoreEntitySet="PurchaseInvAttach">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseInvId" ColumnName="PurchaseInvId" />
+          <ScalarProperty Name="FilePath" ColumnName="FilePath" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseInvoices">
+      <EntityTypeMapping TypeName="hddt_dataModel.PurchaseInvoice">
+        <MappingFragment StoreEntitySet="PurchaseInvoice">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="EnterpriseName" ColumnName="EnterpriseName" />
+          <ScalarProperty Name="ArisingDate" ColumnName="ArisingDate" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Supplier" ColumnName="Supplier" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="Currency" ColumnName="Currency" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseInvProds">
+      <EntityTypeMapping TypeName="hddt_dataModel.PurchaseInvProd">
+        <MappingFragment StoreEntitySet="PurchaseInvProd">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="VATRate" ColumnName="VATRate" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="PurchaseInvId" ColumnName="PurchaseInvId" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecordsInvs">
+      <EntityTypeMapping TypeName="hddt_dataModel.RecordsInv">
+        <MappingFragment StoreEntitySet="RecordsInv">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvPattern" ColumnName="InvPattern" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AccordingTo" ColumnName="AccordingTo" />
+          <ScalarProperty Name="RecordCreationInfor" ColumnName="RecordCreationInfor" />
+          <ScalarProperty Name="RepresentA" ColumnName="RepresentA" />
+          <ScalarProperty Name="RepresentB" ColumnName="RepresentB" />
+          <ScalarProperty Name="Confirmation" ColumnName="Confirmation" />
+          <ScalarProperty Name="AdjustId" ColumnName="AdjustId" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Commitment" ColumnName="Commitment" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="hddt_dataModel.role">
+        <MappingFragment StoreEntitySet="role">
+          <ScalarProperty Name="roleid" ColumnName="roleid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="IsSysAdmin" ColumnName="IsSysAdmin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SendEmails">
+      <EntityTypeMapping TypeName="hddt_dataModel.SendEmail">
+        <MappingFragment StoreEntitySet="SendEmail">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CCEmail" ColumnName="CCEmail" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+          <ScalarProperty Name="EmailFrom" ColumnName="EmailFrom" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileAttach" ColumnName="FileAttach" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SendedDate" ColumnName="SendedDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="InvToken" ColumnName="InvToken" />
+          <ScalarProperty Name="BodySms" ColumnName="BodySms" />
+          <ScalarProperty Name="SmsTitle" ColumnName="SmsTitle" />
+          <ScalarProperty Name="SmsStatus" ColumnName="SmsStatus" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CusName" ColumnName="CusName" />
+          <ScalarProperty Name="PlainBody" ColumnName="PlainBody" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SendSms">
+      <EntityTypeMapping TypeName="hddt_dataModel.SendSm">
+        <MappingFragment StoreEntitySet="SendSms">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="InvKey" ColumnName="InvKey" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="SmsBody" ColumnName="SmsBody" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Staffs">
+      <EntityTypeMapping TypeName="hddt_dataModel.Staff">
+        <MappingFragment StoreEntitySet="Staff">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Division" ColumnName="Division" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxAuthorities">
+      <EntityTypeMapping TypeName="hddt_dataModel.TaxAuthority">
+        <MappingFragment StoreEntitySet="TaxAuthority">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionDatas">
+      <EntityTypeMapping TypeName="hddt_dataModel.TransactionData">
+        <MappingFragment StoreEntitySet="TransactionData">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvPattern" ColumnName="InvPattern" />
+          <ScalarProperty Name="InvSerial" ColumnName="InvSerial" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Messages" ColumnName="Messages" />
+          <ScalarProperty Name="CompleteResult" ColumnName="CompleteResult" />
+          <ScalarProperty Name="FailResult" ColumnName="FailResult" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="TypeTrans" ColumnName="TypeTrans" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="AttachedFile" ColumnName="AttachedFile" />
+          <ScalarProperty Name="NoRange" ColumnName="NoRange" />
+          <ScalarProperty Name="BillTime" ColumnName="BillTime" />
+          <ScalarProperty Name="TranLock" ColumnName="TranLock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userdatas">
+      <EntityTypeMapping TypeName="hddt_dataModel.userdata">
+        <MappingFragment StoreEntitySet="userdata">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FailedPassAttemptCount" ColumnName="FailedPassAttemptCount" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Serials" ColumnName="Serials" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserProfiles">
+      <EntityTypeMapping TypeName="hddt_dataModel.UserProfile">
+        <MappingFragment StoreEntitySet="UserProfile">
+          <ScalarProperty Name="ProfileID" ColumnName="ProfileID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PropertyName" ColumnName="PropertyName" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="LastUpdateDate" ColumnName="LastUpdateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VATConversions">
+      <EntityTypeMapping TypeName="hddt_dataModel.VATConversion">
+        <MappingFragment StoreEntitySet="VATConversion">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ComId" ColumnName="ComId" />
+          <ScalarProperty Name="CKey" ColumnName="CKey" />
+          <ScalarProperty Name="ConvertedDate" ColumnName="ConvertedDate" />
+          <ScalarProperty Name="InvoiceId" ColumnName="InvoiceId" />
+          <ScalarProperty Name="ConvertedBy" ColumnName="ConvertedBy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VATInvoices">
+      <EntityTypeMapping TypeName="hddt_dataModel.VATInvoice">
+        <MappingFragment StoreEntitySet="VATInvoice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="InvCateID" ColumnName="InvCateID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="No" ColumnName="No" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Pattern" ColumnName="Pattern" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="ComName" ColumnName="ComName" />
+          <ScalarProperty Name="ComPhone" ColumnName="ComPhone" />
+          <ScalarProperty Name="ComAddress" ColumnName="ComAddress" />
+          <ScalarProperty Name="ComTaxCode" ColumnName="ComTaxCode" />
+          <ScalarProperty Name="ComBankName" ColumnName="ComBankName" />
+          <ScalarProperty Name="ComBankNo" ColumnName="ComBankNo" />
+          <ScalarProperty Name="CusCode" ColumnName="CusCode" />
+          <ScalarProperty Name="CusName" ColumnName="CusName" />
+          <ScalarProperty Name="Buyer" ColumnName="Buyer" />
+          <ScalarProperty Name="CusAddress" ColumnName="CusAddress" />
+          <ScalarProperty Name="CusPhone" ColumnName="CusPhone" />
+          <ScalarProperty Name="CusBankName" ColumnName="CusBankName" />
+          <ScalarProperty Name="CusBankNo" ColumnName="CusBankNo" />
+          <ScalarProperty Name="CusTaxCode" ColumnName="CusTaxCode" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PaymentMethod" ColumnName="PaymentMethod" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="VATRate" ColumnName="VATRate" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="AmountInWords" ColumnName="AmountInWords" />
+          <ScalarProperty Name="PaymentStatus" ColumnName="PaymentStatus" />
+          <ScalarProperty Name="Converted" ColumnName="Converted" />
+          <ScalarProperty Name="KindOfService" ColumnName="KindOfService" />
+          <ScalarProperty Name="CusSignStatus" ColumnName="CusSignStatus" />
+          <ScalarProperty Name="CreateBy" ColumnName="CreateBy" />
+          <ScalarProperty Name="PublishBy" ColumnName="PublishBy" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+          <ScalarProperty Name="ArisingDate" ColumnName="ArisingDate" />
+          <ScalarProperty Name="ProcessInvNote" ColumnName="ProcessInvNote" />
+          <ScalarProperty Name="Fkey" ColumnName="Fkey" />
+          <ScalarProperty Name="GrossValue" ColumnName="GrossValue" />
+          <ScalarProperty Name="VatAmount0" ColumnName="VatAmount0" />
+          <ScalarProperty Name="GrossValue0" ColumnName="GrossValue0" />
+          <ScalarProperty Name="VatAmount5" ColumnName="VatAmount5" />
+          <ScalarProperty Name="GrossValue5" ColumnName="GrossValue5" />
+          <ScalarProperty Name="VatAmount10" ColumnName="VatAmount10" />
+          <ScalarProperty Name="GrossValue10" ColumnName="GrossValue10" />
+          <ScalarProperty Name="Certified" ColumnName="Certified" />
+          <ScalarProperty Name="CertifiedID" ColumnName="CertifiedID" />
+          <ScalarProperty Name="CertifiedData" ColumnName="CertifiedData" />
+          <ScalarProperty Name="ComFax" ColumnName="ComFax" />
+          <ScalarProperty Name="MaBA" ColumnName="MaBA" />
+          <ScalarProperty Name="SoPT" ColumnName="SoPT" />
+          <ScalarProperty Name="InvType" ColumnName="InvType" />
+          <ScalarProperty Name="ParentName" ColumnName="ParentName" />
+          <ScalarProperty Name="OtherFees" ColumnName="OtherFees" />
+          <ScalarProperty Name="ExtraFees" ColumnName="ExtraFees" />
+          <ScalarProperty Name="ChangeFees" ColumnName="ChangeFees" />
+          <ScalarProperty Name="VATOther" ColumnName="VATOther" />
+          <ScalarProperty Name="PortalLink" ColumnName="PortalLink" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ExchangeRate" ColumnName="ExchangeRate" />
+          <ScalarProperty Name="Ikey" ColumnName="Ikey" />
+          <ScalarProperty Name="CurrencyUnit" ColumnName="CurrencyUnit" />
+          <ScalarProperty Name="StoreId" ColumnName="StoreId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductInvs">
+      <EntityTypeMapping TypeName="hddt_dataModel.ProductInv">
+        <MappingFragment StoreEntitySet="ProductInv">
+          <ScalarProperty Name="InvID" ColumnName="InvID" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="VATRate" ColumnName="VATRate" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="ProdType" ColumnName="ProdType" />
+          <ScalarProperty Name="IsSum" ColumnName="IsSum" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Extra" ColumnName="Extra" />
+          <ScalarProperty Name="ComID" ColumnName="ComID" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role_permission">
+      <EntityTypeMapping TypeName="hddt_dataModel.role_permission">
+        <MappingFragment StoreEntitySet="role_permission">
+          <ScalarProperty Name="permissionid" ColumnName="permissionid" />
+          <ScalarProperty Name="roleid" ColumnName="roleid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_role">
+      <EntityTypeMapping TypeName="hddt_dataModel.user_role">
+        <MappingFragment StoreEntitySet="user_role">
+          <ScalarProperty Name="roleid" ColumnName="roleid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

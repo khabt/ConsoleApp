@@ -1,0 +1,11 @@
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.exe.config
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.exe
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\ConsoleApp.pdb
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\EntityFramework.dll
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\EntityFramework.xml
+C:\SoftDream\console\ConsoleApp\ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\SoftDream\console\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\SoftDream\console\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.csproj.CopyComplete
+C:\SoftDream\console\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.exe
+C:\SoftDream\console\ConsoleApp\ConsoleApp\obj\Debug\ConsoleApp.pdb
