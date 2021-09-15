@@ -37,7 +37,8 @@ namespace ConsoleApp
 
         static void Update(string pattern, string serial, int comid, int fromNo)
         {
-            VatInvoiceServices va = new VatInvoiceServices();            
+            VatInvoiceServices vaaa = new VatInvoiceServices();
+            vaaa.UpdateInv(pattern, serial, comid, fromNo);
         }
     }
 }
